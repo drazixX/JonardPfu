@@ -30,15 +30,21 @@
   <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
     <img src="https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg" alt="Photoshop" width="40" height="40" />
   </a>
-  <a href="https://www.adobe.com/products/illustrator.html" target="_blank">
-    <img src="https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc.svg" alt="Illustrator" width="40" height="40" />
-  </a>
-  <a href="https://www.canva.com/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Canva" width="40" height="40" />
-  </a>
-  <a href="https://www.coreldraw.com/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/CorelDRAW_Logo.png/768px-CorelDRAW_Logo.png" alt="CorelDRAW" width="40" height="40" />
-  </a>
+<!-- Canva -->
+<a href="https://www.canva.com/" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva" width="40" height="40"/>
+</a>
+
+<!-- CorelDRAW -->
+<a href="https://www.coreldraw.com/" target="_blank">
+  <img src="https://img.icons8.com/fluency/48/coreldraw.png" alt="CorelDRAW" width="40" height="40"/>
+</a>
+
+<!-- Illustrator -->
+<a href="https://www.adobe.com/products/illustrator.html" target="_blank">
+  <img src="https://img.icons8.com/color/48/adobe-illustrator.png" alt="Illustrator" width="40" height="40"/>
+</a>
+
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40" />
   </a>
