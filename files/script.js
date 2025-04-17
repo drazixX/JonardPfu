@@ -51,3 +51,25 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
     observer.observe(section);
 });
+
+
+// ABOUT
+document.addEventListener("DOMContentLoaded", function() {
+    const observerOptions = {
+        threshold: 0.5 // The element will be considered in view when 50% of it is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once the element has appeared
+            }
+        });
+    }, observerOptions);
+
+    // Observe each section or element you want to animate on scroll
+    document.querySelectorAll('#Skills .sec, #Projects .row, #Services .prj-list, #Contact .contact-list').forEach((el) => {
+        observer.observe(el);
+    });
+});

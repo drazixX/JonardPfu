@@ -1,3 +1,23 @@
+/* ABOUT */
+/* Default state of elements (hidden initially) */
+#Skills .sec,
+#Projects .row,
+#Services .prj-list,
+#Contact .contact-list {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s ease-out;
+}
+
+/* Visible state when elements come into view */
+#Skills .sec.visible,
+#Projects .row.visible,
+#Services .prj-list.visible,
+#Contact .contact-list.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @font-face {
     font-family: 'NTBrickSans';
     src: url('./fonts/NTBrickSans.ttf') format('truetype');
@@ -799,7 +819,6 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-
 /* Contact columns */
 .contact-item {
     display: flex;
@@ -812,13 +831,13 @@
 /* Left align Gmail */
 .contact-item.left-align {
     align-items: flex-start;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 /* Right align Phone and Facebook */
 .contact-item.right-align {
     align-items: flex-end;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .contact-item li {
@@ -832,6 +851,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .contact-item i {
     font-size: 28px;
     color: #ffaa33;
@@ -844,6 +864,24 @@
 
 .contact-item li:last-child {
     margin-bottom: 0;
+}
+/* Remove default link styling */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the current color for text */
+}
+
+/* Optional: Add custom styles for the links */
+.contact-item a {
+    color: #ffffff;  /* Set your desired color for links */
+    font-weight: bold;  /* Optional: make it bold for emphasis */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between icon and text */
+}
+
+.contact-item a:hover {
+    color: #ff7f00;  /* Optional: change color on hover */
 }
 
 /* Icons general */
