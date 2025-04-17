@@ -35,11 +35,6 @@
   <img src="https://img.icons8.com/color/48/000000/canva.png" alt="Canva" width="40" height="40"/>
 </a>
 
-<!-- CorelDRAW -->
-<a href="https://www.coreldraw.com/" target="_blank">
-  <img src="https://img.icons8.com/fluency/48/coreldraw.png" alt="CorelDRAW" width="40" height="40"/>
-</a>
-
 <!-- Illustrator -->
 <a href="https://www.adobe.com/products/illustrator.html" target="_blank">
   <img src="https://img.icons8.com/color/48/adobe-illustrator.png" alt="Illustrator" width="40" height="40"/>
