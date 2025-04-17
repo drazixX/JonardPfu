@@ -712,6 +712,11 @@
     padding-top: 0px;
     padding-bottom: 70px;
 }
+#Services .prj-list p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 
 .sub-title span {
     color: #ffaa33;
