@@ -6,7 +6,7 @@
 - 🔭 I’m currently pursuing **Final Year Engineering**  
 - 🌱 I’m currently learning **Full Stack Development and Graphic Designing**  
 - 👨‍💻 My portfolio website: [https://drazixx.github.io/JonardPfu/](https://drazixx.github.io/JonardPfu/)  
-- 📫 Reach me at **drazixmain@gmail.com**
+- 📫 Reach me at **drazixmain0122@gmail.com**
 
 ---
 
