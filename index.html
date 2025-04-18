@@ -214,38 +214,55 @@
                             <div class="layer">
                                 <h5>Aquabot</h5>
                                 <p>An AI quatic chatbot</p>
-
-                                <a href="#"><i class='bx bxs-face-mask' style="color: aliceblue;"></i></a>
-
+                                <a href="#" onclick="openModal('./img/FMD.png'); return false;">
+                                    <i class='bx bx-image' style="color: aliceblue;"></i>
+                                </a>
                             </div>
                         </div>
-
+        
                         <div class="row">   
                             <img src="./img/DD.png">
                             <div class="layer">
                                 <h5>Maternal Health Record Tracking System</h5>
-                                <p>The Cumpio Midwife Clinic's workplace is digitalized through this system.Built using HTML, CSS, Javascript, PHP and Myscql</p>
-
-                                <a href="#"><i class='bx bxs-low-vision' style="color: aliceblue;"></i></a>
-                                
+                                <p>The Cumpio Midwife Clinic's workplace is digitalized through this system. Built using HTML, CSS, JavaScript, PHP and MySQL.</p>
+                                <a href="#" onclick="openModal('./img/DD.png'); return false;">
+                                    <i class='bx bx-image' style="color: aliceblue;"></i>
+                                </a>
                             </div>
                         </div>
-
+        
                         <div class="row">
                             <img src="./img/DA.png">
                             <div class="layer">
-                                <h5>Redesigning tarp</h5>
-                                <p>Heres my simple yet innovative approach of re-designing the GCASH tarp (2x3) i just remove a few images and improved the readability of “cash in & cash out” to attrach the audience instead of  gcash moscot</p>
-
-                                <a href="#"><i class='bx bx-desktop' style="color: aliceblue;"></i></a>
-                                
+                                <h5>Redesigning Tarp</h5>
+                                <p>Here’s my simple yet innovative approach to re-designing the GCASH tarp (2x3). I removed a few images and improved the readability of “cash in & cash out” to attract the audience instead of using the GCash mascot.</p>
+                                <a href="#" onclick="openModal('./img/DA.png'); return false;">
+                                    <i class='bx bx-image' style="color: aliceblue;"></i>
+                                </a>
                             </div>
                         </div>
-                        
                     </div>
+        
+                    <!-- Button to Archive Page -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="archive.html" class="btn" style="
+                            padding: 10px 20px;
+                            background-color: hwb(52 10% 28%);;
+                            color: white;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            font-weight: bold;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                            transition: background-color 0.3s ease;
+                        " onmouseover="this.style.backgroundColor='#ffaa33'" onmouseout="this.style.backgroundColor='#ffaa33'">
+                            View More Works
+                        </a>
+                    </div>
+        
                 </div>
             </div>
         </section>
+        
 
         <section id="Services">
             <div class="project">
@@ -320,6 +337,34 @@
     <a href="#Contact" class="down"><i class='bx bx-down-arrow-alt'></i></a>
 </div>
 
+
+<!-- MODAL AND JAVASCRIPT FOR PROJECTS -->
+<!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = src;
+    }
+  
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+  
+    // Listen for ESC key to close modal
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+  
 
         <script src="./files/script.js"></script>
     </body>  
