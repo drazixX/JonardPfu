@@ -299,6 +299,7 @@
 
 .img {
     display: inline-block;
+    position: absolute;
     left: 55%;
     bottom: 15%;
     margin-right: 5%;
@@ -306,20 +307,52 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    position: absolute;
     opacity: 0;
     animation: slideUP 1s ease forwards;
     animation-delay: 1s;
+    z-index: 2;
+    max-width: 40vw; /* Responsive width based on viewport */
 }
 
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+/* If you're using .responsive separately */
 .responsive {
     width: 100%;
     height: auto;
-    border-top-left-radius: 251px;
-    border-top-right-radius: 251px;
-    border-bottom-left-radius: 251px;
-    border-bottom-right-radius: 251px;
+    border-radius: 50%;
 }
+
+@media screen and (max-width: 768px) {
+    .img {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 60vw;
+        max-width: 300px;
+        transform: translateX(20%); /* Shift to the right */
+        animation: none;
+        opacity: 1;
+    }
+}
+.section-heading {
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-heading {
+        margin-top: 30px; /* smaller margin for mobile */
+    }
+}
+
 
 /*about*/
 
