@@ -1,3 +1,13 @@
+/* ARCHIVE BACK TO HOME */
+.logo {
+    cursor: pointer;
+}
+.main-text {
+    text-align: center;
+}
+
+
+
 /* ABOUT */
 /* Default state of elements (hidden initially) */
 #Skills .sec,
